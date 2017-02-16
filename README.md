@@ -11,3 +11,6 @@ Step 0 - Setup and Knowledge Check
 Step 1 - Your First AJAX Request
 5. Method = GET; Status = 200;  Compared to Step 0 = same.
 6. Type = script and xhr; Initiator = index.html and jquery.min.js; Compared to Step 0 = different.
+
+Step 2 - Binding to A Click Event
+See code in ajax.js
