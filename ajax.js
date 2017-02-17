@@ -27,5 +27,16 @@ $(document).ready(function () {
     });
   });
 
+  $("#step7 button").on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/count',
+      method: 'GET',
+      data: {},
+      dataType: 'text'
+    }).done(function(responseData){
+        $("#step7").append(responseData);
+        console.log(responseData);      
+    });
+  });
 
 });
