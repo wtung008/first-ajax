@@ -14,3 +14,6 @@ Step 1 - Your First AJAX Request
 
 Step 2 - Binding to A Click Event
 See code in ajax.js
+
+Step 3 - Using Information in the response
+4. Wow what a ride! I came all the way from the server!
