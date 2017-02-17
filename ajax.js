@@ -12,13 +12,16 @@ $(document).ready(function () {
 
   $("#step3456 button").on('click', function() {
     $.ajax({
-      url: 'http://first-ajax-api.herokuapp.com/ping',
+      url: 'http://first-ajax-api.herokuapp.com/pong',
       method: 'GET',
       data: {},
       dataType: 'text'
     }).done(function (responseData){
-        $("#step3456").append(responseData)
-        console.log(responseData)
+        $("#step3456").append(responseData);
+        console.log(responseData);
+    }).fail(function(responseData){
+        $("#step3456").append('Oops...something is wrong.  Try harder next time!');
+        console.log(responseData);
     });
   });
 
