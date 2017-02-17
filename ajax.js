@@ -22,6 +22,8 @@ $(document).ready(function () {
     }).fail(function(responseData){
         $("#step3456").append('Oops...something is wrong.  Try harder next time!');
         console.log(responseData);
+    }).always(function() {
+        console.log('Hey the request finished!')
     });
   });
 
