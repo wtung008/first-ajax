@@ -20,3 +20,9 @@ Step 3 - Using Information in the response
 
 Step 4 - When Things Go Wrong
 3. HTTP status code = 500, Internal Server Error
+
+Step 6 - All Together Now!
+2. /ping -  Response: Wow what a ride! I came all the way from the server!
+   /pong - Response: "I'm sorry, Dave. I'm afraid I can't do that.", status: 500, statusText: "Internal Server Error"}
+
+   both /ping & /pong has message: "Hey the request finished!"
