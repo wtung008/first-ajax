@@ -51,11 +51,18 @@ $(document).ready(function () {
       $("#step8").append(responseData);
       console.log(responseData);
     });
-
   });
 
-
-
-
+  $("#step9").on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/a_car',
+      method: 'GET',
+      data: {},
+      dataType: 'html'
+    }).done(function(responseData) {
+      $("#step9_list").append(responseData);
+      console.log(responseData);
+    });
+  });
 
 });
