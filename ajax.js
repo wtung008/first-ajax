@@ -35,8 +35,27 @@ $(document).ready(function () {
       dataType: 'text'
     }).done(function(responseData){
         $("#step7").append(responseData);
-        console.log(responseData);      
+        console.log(responseData);
     });
   });
+
+  $("#step8 button").on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/time',
+      method: 'GET',
+      // method: 'POST'
+      // data: {},
+      data: {timezone: 'Pacific/Honolulu'},
+      dataType: 'text'
+    }).done(function(responseData) {
+      $("#step8").append(responseData);
+      console.log(responseData);
+    });
+
+  });
+
+
+
+
 
 });
